@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">News Demo</string>
+    <string name="owner">Huawei Developers</string>
+    <string name="copyright_info">Copyright 2021 Huawei Technologies Co.Ltd</string>
+    <string name="app_at_url" translatable="false">https://oauth-login.cloud.huawei.com/oauth2/v3/token</string>
+
+    <!-- BaseActivity-->
+    <string name="log_in_success">Login Successfully</string>
+    <string name="log_out_success">Logout Successfully</string>
+
+    <!-- BaseDialog-->
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- MainActivity-->
+    <string name="title_home">Home</string>
+    <string name="title_video">Video</string>
+    <string name="title_my">My</string>
+    <string name="title_search">Everyone is searching for HMS</string>
+    <string name="notice">RequestNotice</string>
+    <string name="sys_integrity_detecting">Detecting...</string>
+    <string name="first_press_back">Press again to exit</string>
+
+    <!-- Version update -->
+    <string name="version_checking">Checking...</string>
+    <string name="is_the_latest_version">You version is up to date.</string>
+    <string name="found_new_version">New version detected.\n Click here to update.</string>
+    <string name="no_found_new_version">Failed to check the new version. Please try again later.</string>
+
+    <!-- SearchActivity-->
+    <string name="ed_search_tip">Please input content to search</string>
+    <string name="search_no_tip">Please input content to search</string>
+    <string name="search_history">Search History</string>
+    <string name="search_hot">Hot Search</string>
+    <string name="delete_history">Clear History</string>
+    <string name="check_delete_history">Do you confirm to delete history?</string>
+
+    <!-- MyFragment-->
+    <string name="my_vip_center">Member</string>
+    <string name="my_release">My News</string>
+    <string name="my_privacy">Privacy</string>
+    <string name="my_favorite">Favorites</string>
+    <string name="my_follow">Follow</string>
+    <string name="my_view_history">History</string>
+    <string name="my_login">Log in</string>
+    <string name="my_logout">Log Out</string>
+    <string name="please_sign_first">Please login first</string>
+    <string name="confirm_log_out">Do you confirm to log out?</string>
+    <string name="tip_sign_in_first">Please login first</string>
+
+    <!-- NewsListFragment-->
+    <string name="news_no_data">No Data</string>
+    <string name="news_no_more_data">No More Data</string>
+
+    <!-- kits information-->
+    <string name="power_by" translatable="false">Powered By HMS Core</string>
+
+    <string name="adskit_name">Ads Kit</string>
+    <string name="ads_link">https://developer.huawei.com/consumer/en/hms/huawei-adskit?ha_source=hms7</string>
+    <string name="ads_ads">Ads Shown</string>
+
+    <string name="accountkit_name">Account Kit</string>
+    <string name="account_link">https://developer.huawei.com/consumer/en/hms/huawei-accountkit?ha_source=hms7</string>
+    <string name="account_login">One-click Sign-in</string>
+
+    <string name="mlkit_name">ML Kit</string>
+    <string name="ml_link">https://developer.huawei.com/consumer/en/hms/huawei-mlkit?ha_source=hms7</string>
+    <string name="ml_asr">ASR</string>
+    <string name="ml_translate">Text Translation</string>
+    <string name="ml_resolution">Image Super-Resolution</string>
+    <string name="ml_tts">Text to Speech</string>
+
+    <string name="analytics_name">Analytics Kit</string>
+    <string name="analytics_link">https://developer.huawei.com/consumer/en/hms/huawei-analyticskit?ha_source=hms7</string>
+    <string name="analytics_report">Analytics Report</string>
+
+    <string name="location_name">Location Kit</string>
+    <string name="location_link">https://developer.huawei.com/consumer/en/hms/huawei-locationkit?ha_source=hms7</string>
+    <string name="location_lbs">LBS</string>
+
+    <string name="push_name">Push Kit</string>
+    <string name="push_link">https://developer.huawei.com/consumer/en/hms/huawei-pushkit?ha_source=hms7</string>
+    <string name="push_message">Subscription</string>
+
+    <string name="video_name">Video Kit</string>
+    <string name="video_link">https://developer.huawei.com/consmer/en/hms/huawei-videokit?ha_source=hms7</string>
+    <string name="video_play">Video Display</string>
+
+    <string name="iap_name">In-App Purchases</string>
+    <string name="iap_link">https://developer.huawei.com/consumer/en/hms/huawei-iap?ha_source=hms7</string>
+    <string name="member_purchase">Members Purchase</string>
+
+    <string name="ml_translation_des">Online translation between 40 languages enables users around the world to browse news content.</string>
+    <string name="ml_resolution_des">Improves the resolution of news images for better news browsing experience and saves cloud resources.</string>
+    <string name="ml_tts_des">When users are reading news, TTS can convert a large amount text into speech output and highlight the content that is being played to free users eyes, bringing interests to users.</string>
+    <string name="account_login_des">One-click sign-in capability help users sign HUAWEI ID into news apps without manual login or verification.</string>
+    <string name="iap_sub_des">In-App Purchases support subscription and membership purchase experience with multi-language, multi-product, multi-payment methods, etc.</string>
+    <string name="video_play_des">The video service supports video playback with low frame freezing, high definition, and seamless switching, allowing users to enjoy stable and high-definition news videos.</string>
+    <string name="ads_des">Huawei ads service supports multiple advertisement display modes, such as splash ads when an app is opened, native ads are inserted in the news list and roll ads before video play to obtain monetization benefits for news app developers.</string>
+    <string name="location_lbs_des">Accurate access to the location of users and displays nearby news.</string>
+    <string name="push_notify_des">The push messages triggered by users through subscription accurately reaches the users, optimizing the operation work and improving user activity.</string>
+    <string name="analytics_report_des">Provides free data analysis for a wide range of devices and platforms, so you can make informed decisions on product optimization and marketing based on your users\' behavior.</string>
+    <string name="ml_asr_des">Achieve high-precision ASR (Automatic Speech Recognition) capability for News App voice search product scenarios to help users quickly search for news.</string>
+    <string name="begin_rich_text">begin your writing！~</string>
+    <string name="publish_success">publish success</string>
+
+    <!-- instream ad-->
+    <string name="ad_tips">%ss|skip</string>
+
+    <!-- videoListFragment -->
+    <string name="video_no_wifi">Video cannot be played without WIFI connection. You can connect to WIFI and restart the app.</string>
+    <string name="video_url_share">Share</string>
+    <string name="video_no_tip">No Related Video</string>
+    <string name="video_key">video_url_en</string>
+    <string name="video_url_null">The video link is empty. Please try again.</string>
+
+    <!-- MemberActivity -->
+    <string name="member_price">%s %s</string>
+    <string name="member_title">Enable Member</string>
+    <string name="member_no_enable">Not enabled</string>
+    <string name="member_buy_tip">Please select the service you want to purchase first.</string>
+    <string name="buy_member_success">Purchase succeeded.</string>
+    <string name="buy_member_tip_2">Purchase Repeated</string>
+    <string name="member_des_1">%s Next renew time:%s</string>
+    <string name="member_des_2">%s Expire on %s</string>
+    <string name="member_buy">Buy Now</string>
+    <string name="membership_privileges">Membership Privileges</string>
+    <string name="prestige_sign">Prestige Sign</string>
+    <string name="video_free">Video ad-free</string>
+    <string name="membership_package">Membership Package</string>
+
+    <!-- push -->
+    <string name="tile_news_push">News push</string>
+    <string name="body_news_push">The %1$s account you follow has published another article: %2$s.</string>
+
+    <!-- FollowActivity -->
+    <string name="followed">Followed</string>
+    <string name="add_follow">Follow</string>
+    <string name="update_time">Updates within a day</string>
+    <string name="account">Account</string>
+    <string name="update_within_day">Update within %d day</string>
+    <string name="update_within_days">Update within %d days</string>
+    <string name="update_on">Updated %s</string>
+
+    <!-- FavoriteActivity -->
+    <string name="title_favorite">Favorite News</string>
+    <string name="undo_favorite_alert">Cancel Favorites</string>
+
+    <!-- BrowsingHistoryActivity -->
+    <string name="title_history">Browsing History</string>
+
+
+    <!-- Webview -->
+    <string name="url_error">The Url is error</string>
+
+    <!-- Privacy activity -->
+    <string name="exitMessage">Exit from News Demo App</string>
+    <string name="privacyReject">Decline</string>
+    <string name="privacyaccept">Accept</string>
+    <string name="privacycontinue">Continue</string>
+    <string name="confirm_button">OK</string>
+    <string name="readme_url">https://github.com/HMS-Core/hms-news-demo/blob/main/README.md</string>
+    <string name="privacy_state">This is a demo app that helps you understand how to use HMS Core capability in a News application, and learn how to integrate the HMS Core SDKs or Kits in your app. This app demonstrates the flow includes News publish, News list, News Reading.\n\nHMS Core offers an innovative solution that assists News apps with quick customer acquisition and improved conversion rates, for sustainable business growth.\n\nLearn more</string>
+    <string name="privacy_summary1">This service requires “Location” permission to show city information in the main page, “Microphone” permission to provide voice search, “Storage” permission to insert picture in self-publish news. If you are using this app without being logged in to a HUAWEI ID, you hereby confirm that you are aged 18 years or over. By enabling the service, you grant the above permissions, acknowledge the Privacy Statement below, and accept the terms of the </string>
+    <string name="privacy_title">Permissions and User Agreement</string>
+    <string name="privacy_title2">Privacy</string>
+
+    <string name="readme_title">here.</string>
+    <string name="agreement_title">News Demo User Agreement.</string>
+    <string name="statement_title">Statement about News Demo and Privacy.</string>
+    <string name="agreement_url">file:///android_asset/documents/agreement.html</string>
+    <string name="statement_url">file:///android_asset/documents/privacy.html</string>
+
+    <!-- FeedbackActivity -->
+    <string name="rating">Rating</string>
+    <string name="submit">Submit</string>
+    <string name="feedback_content">Please enter your comments</string>
+    <string name="confirm_feedback">Thank you for your suggestions and we will analyze them and improve them as soon as possible.</string>
+    <string name="help_and_feedback">Survey</string>
+    <string name="version_update">Version Update</string>
+    <string name="empty_address">Local</string>
+    <string name="survey_url">http://hms-core.mikecrm.com/nhj9dNk</string>
+
+    <string name="stop_reading_tips">This article is being read. Are you sure you want to exit?</string>
+    <string name="language_not_support">The current language(%s) is not supported.</string>
+    <string name="net_connect_falied">Abnormal network connection</string>
+    <string name="question1">Q1.Please let us know your feedback about this Demo, whether it is helpful ?</string>
+    <string name="question2">Q2. Any suggestions are greatly appreciated.</string>
+    <string name="question3">Q3. Are you satisfied with our demo ?</string>
+
+
+
+    <!-- EditPicture -->
+    <string name="back">Back</string>
+    <string name="filter">Filter</string>
+    <string name="crop">Crop</string>
+    <string name="stickers">Stickers</string>
+    <string name="ad_flag">Ad</string>
+    <string name="click_img_to_edit"> Click the picture to edit</string>
+    <string name="super_image_300">Super resolution of an image, increasing the resolution by 300%</string>
+    <string name="wrigh_a_title_40"> Write a title (max. 40 words) ~</string>
+    <string name="cancle">Cancel</string>
+    <string name="next">Next</string>
+    <string name="cover_set">Cover Page Settings</string>
+    <string name="no_picture">No image</string>
+    <string name="single_picture">Single image</string>
+    <string name="release">Release</string>
+    <string name="top">top</string>
+    <string name="delete_image">Delete Image</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="mine_news">My News</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="filter_type_1">Origin</string>
+    <string name="filter_type_2">Black-and-white</string>
+    <string name="filter_type_3">Brown tone</string>
+    <string name="filter_type_4">Lazy</string>
+    <string name="filter_type_5">Freesia</string>
+    <string name="image_back">Back</string>
+    <string name="image_filter">Save Filter</string>
+    <string name="image_crop">Save Crop</string>
+    <string name="image_sticker">Save Stickers</string>
+
+
+
+    <!-- Super Resolution -->
+    <string name="clickpicture">Click the Picture for Super-Resolution</string>
+
+    <!-- Others -->
+    <string name="domain_uri_prefix">https://newsdemo.dre.agconnect.link</string>
+    <string name="member_refund_url" translatable="false">https://subscr-dre.iap.hicloud.com/sub/applications/v2/purchases/returnFee</string>
+    <string name="privacy_summary2">  </string>
+</resources>

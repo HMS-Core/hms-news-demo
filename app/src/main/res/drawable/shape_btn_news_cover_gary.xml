@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2019-2021. All rights reserved.
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+
+    <solid android:color="#C3A89F9F" />
+
+    <corners
+        android:radius="10dp"
+        />
+
+    <size
+        android:width="65dp"
+        android:height="15dp"></size>
+</shape>

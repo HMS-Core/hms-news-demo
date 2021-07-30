@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/bar_home"
+        layout="@layout/home_bar" />
+
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcdcdc"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="0dp">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/Custom.TabRadioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="@string/title_home" />
+
+        <RadioButton
+            android:id="@+id/tab_video"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_video_selector"
+            android:text="@string/title_video" />
+
+        <RadioButton
+            android:id="@+id/tab_my"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:text="@string/title_my" />
+    </RadioGroup>
+</LinearLayout>

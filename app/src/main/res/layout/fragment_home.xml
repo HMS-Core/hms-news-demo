@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_home"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".page.fragment.HomeFragment">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_toLeftOf="@+id/city">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/news_tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tabBackground="@color/white"
+                    app:tabIndicatorColor="@color/red"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabRippleColor="@color/hiad_transparent"
+                    app:tabSelectedTextColor="@color/black" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_address"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/news_view_pager"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

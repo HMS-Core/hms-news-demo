@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_type">
+        <item>Follow</item>
+        <item>Recommend</item>
+        <item>Enablement</item>
+        <item>Scenario</item>
+        <item>Activity</item>
+        <item>Cases</item>
+        </string-array>
+
+    <string-array name="video_type">
+        <item>HMS Core Time</item>
+        <item>HMS Core Discovery</item>
+    </string-array>
+
+    <string-array name="search_type">
+        <item>News</item>
+        <item>Video</item>
+    </string-array>
+
+    <string-array name="search_hot">
+        <item>CG</item>
+        <item>Video Player</item>
+        <item>Translation</item>
+        <item>DIGIX</item>
+    </string-array>
+
+    <string-array name="feedback_list">
+        <item>Suggestions</item>
+        <item>Exception</item>
+        <item>Complaint</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="language_list">
+        <item>English</item>
+        <item>العربية</item>
+        <item>Dansk</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+        <item>Suomenkielinen</item>
+        <item>Français</item>
+        <item>Italiano</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>Polska</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>Svenska</item>
+        <item>ไทย</item>
+        <item>Türkçe</item>
+        <item>中文</item>
+        <item>中文繁體</item>
+        <item>Melayu</item>
+        <item>Norsk</item>
+        <item>Người Việt</item>
+        <item>Česká republika</item>
+        <item>Ελληνική γλώσσα</item>
+        <item>עברית</item>
+        <item>हिन्दी</item>
+        <item>Indonesia</item>
+        <item>Română</item>
+        <item>Srpski</item>
+        <item>Filipino</item>
+        <item>ស្រុកខ្មែរ</item>
+        <item>မြန်မာဘာသာစကား</item>
+        <item>தாமில்</item>
+        <item>MagyarName</item>
+        <item>Nederlands</item>
+        <item>فارسی</item>
+        <item>Slovenská</item>
+        <item>Eesti</item>
+        <item>Latvijas</item>
+        <item>Български</item>
+        <item>Hrvatska</item>
+    </string-array>
+
+    <string-array name="iso_639_1_list">
+        <item>en</item>
+        <item>ar</item>
+        <item>da</item>
+        <item>de</item>
+        <item>es</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>sv</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>zh</item>
+        <item>zh-HK</item>
+        <item>ms</item>
+        <item>no</item>
+        <item>vi</item>
+        <item>cs</item>
+        <item>el</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>id</item>
+        <item>ro</item>
+        <item>sr</item>
+        <item>tl</item>
+        <item>km</item>
+        <item>my</item>
+        <item>ta</item>
+        <item>hu</item>
+        <item>nl</item>
+        <item>fa</item>
+        <item>sk</item>
+        <item>et</item>
+        <item>lv</item>
+        <item>bg</item>
+        <item>hr</item>
+    </string-array>
+	<string-array name="tts_support_list">
+        <item>zh</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/lNewsINfo"
+            android:layout_toLeftOf="@+id/img1Small"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="title"/>
+
+            <LinearLayout
+                android:id="@+id/lImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_5"
+                >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="70dp"
+                    android:adjustViewBounds="true"/>
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="70dp"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:maxHeight="70dp"
+                    android:adjustViewBounds="true"       />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img1Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="120dp"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/publisher"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text="publisher"
+                    android:paddingRight="15dp"/>
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text="time"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img1Small"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/superresolution_image"
+            android:maxHeight="80dp"
+            android:minHeight="70dp"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:background="@color/white"
+            />
+
+        <ScrollView
+            android:id="@+id/scroll_view_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lNewsINfo"/>
+    </RelativeLayout>
+</layout>

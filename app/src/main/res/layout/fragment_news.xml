@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".page.fragment.NewsListFragment">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/sf_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            app:srlAccentColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--Image Super            -->
+            <LinearLayout
+                android:id="@+id/lImageSuper"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/super_image_300"/>
+
+                <LinearLayout
+                    android:id="@+id/lImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="@dimen/dp_10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/superimg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/superresolution_image"
+                        android:maxHeight="70dp"
+                        android:adjustViewBounds="true"         />
+                    <ImageView
+                        android:id="@+id/superimg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/superresolution_image2"
+                        android:layout_weight="1"
+                        android:maxHeight="70dp"
+                        android:adjustViewBounds="true"/>
+                    <ImageView
+                        android:id="@+id/superimg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/superresolution_image3"
+                        android:layout_weight="1"
+                        android:maxHeight="70dp"
+                        android:adjustViewBounds="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/publisher"
+                        android:layout_width="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/red"/>
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+                        android:text="ML kit"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_news"
+                android:layout_width="match_parent"
+                android:overScrollMode="never"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lImageSuper">
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:text="@string/news_no_data"
+                android:textSize="20sp"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_please_login"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:text="@string/please_sign_first"
+                android:textSize="20sp"
+                android:layout_height="wrap_content">
+            </TextView>
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            app:srlAccentColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</FrameLayout>

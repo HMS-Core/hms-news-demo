@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    >
+    <View
+        android:id="@+id/view_bgd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_size"
+        android:visibility="invisible"
+        >
+    </View>
+    <ProgressBar
+        android:id="@+id/pb_buffer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bar_loading" />
+    <FrameLayout
+        android:id="@+id/fv_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_translate"
+        android:layout_alignBottom="@+id/view_bgd">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@mipmap/back_white"
+            android:layout_marginStart="6dp"
+            android:padding="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/play_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_pause" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <SeekBar
+                    android:id="@+id/seek_bar"
+                    style="@android:style/Widget.DeviceDefault.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/tv_current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seek_bar"
+                    android:text="00:00"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tv_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seek_bar"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="end"
+                    android:text="00:00"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_full"
+                android:src="@mipmap/ic_fullscreen"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/video_no_wifi"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>

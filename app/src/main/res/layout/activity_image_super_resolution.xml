@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lOut"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_1x"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/secondary_text_color"
+            android:gravity="center"
+            android:text="1PX"
+            android:textColor="@color/white"></Button>
+
+        <Button
+            android:id="@+id/button_3x"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/secondary_text_color"
+            android:gravity="center"
+            android:text="3PX"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+        <Button
+            android:id="@+id/button_original"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/secondary_text_color"
+            android:gravity="center"
+            android:text="original"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/clickme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="@dimen/dp_200"
+        android:text="@string/clickpicture"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_buttons"
+        android:layout_below="@id/clickme"
+
+        android:layout_marginBottom="15dp">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/superresolution_image"/>
+    </ScrollView>
+
+</RelativeLayout>

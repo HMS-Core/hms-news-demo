@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">新闻Demo</string>
+    <string name="owner">Huawei Developers</string>
+    <string name="copyright_info">版权所有 2021 华为技术有限公司保留一切权利</string>
+
+
+    <!-- BaseActivity-->
+    <string name="log_in_success">登录成功</string>
+    <string name="log_out_success">退出登录成功</string>
+
+    <!-- BaseDialog-->
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="welcome">欢迎</string>
+
+    <!-- MainActivity-->
+    <string name="title_home">首页</string>
+    <string name="title_video">视频</string>
+    <string name="title_my">我的</string>
+    <string name="title_search">大家都在搜HMS</string>
+    <string name="notice">RequestNoticeZh</string>
+    <string name="sys_integrity_detecting">检查中...</string>
+    <string name="first_press_back">再按一次返回键退出</string>
+
+    <!-- Version update -->
+    <string name="version_checking">检查中...</string>
+    <string name="is_the_latest_version">当前已是最新版本</string>
+    <string name="found_new_version">已有新版本发布，点击确认更新版本</string>
+    <string name="no_found_new_version">检查更新失败，请稍候重试</string>
+
+    <!-- SearchActivity-->
+    <string name="ed_search_tip">请输入搜索内容</string>
+    <string name="search_no_tip">请输入搜索内容</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_hot">热门搜索</string>
+    <string name="delete_history">清理搜索历史</string>
+    <string name="check_delete_history">确认清空历史记录吗？</string>
+
+    <!-- MyFragment-->
+    <string name="my_vip_center">会员中心</string>
+    <string name="my_release">我的发布</string>
+    <string name="my_privacy">隐私</string>
+    <string name="my_favorite">收藏</string>
+    <string name="my_follow">关注</string>
+    <string name="my_view_history">浏览历史</string>
+    <string name="my_login">登录</string>
+    <string name="my_logout">退出登录</string>
+    <string name="please_sign_first">请先登录</string>
+    <string name="confirm_log_out">是否确认退出登录</string>
+    <string name="tip_sign_in_first">请先登录</string>
+
+    <!-- NewsListFragment-->
+    <string name="news_no_data">暂无数据</string>
+    <string name="news_no_more_data">没有更多数据</string>
+
+    <string name="adskit_name">广告服务</string>
+    <string name="ads_link">https://developer.huawei.com/consumer/cn/hms/huawei-adskit?ha_source=hms7</string>
+    <string name="ads_ads">广告展示</string>
+
+    <!-- kits information-->
+    <string name="accountkit_name">华为帐号服务</string>
+    <string name="account_link">https://developer.huawei.com/consumer/cn/hms/huawei-accountkit?ha_source=hms7</string>
+    <string name="account_login">快捷登录</string>
+
+    <string name="mlkit_name">机器学习服务</string>
+    <string name="ml_link">https://developer.huawei.com/consumer/cn/hms/huawei-mlkit?ha_source=hms7</string>
+    <string name="ml_asr">语音识别</string>
+    <string name="ml_translate">文本翻译</string>
+    <string name="ml_resolution">图片超分辨率</string>
+    <string name="ml_tts">语音合成</string>
+
+    <string name="analytics_name">分析服务</string>
+    <string name="analytics_link">https://developer.huawei.com/consumer/cn/hms/huawei-analyticskit?ha_source=hms7</string>
+    <string name="analytics_report">电商行业应用</string>
+
+    <string name="location_name">定位服务</string>
+    <string name="location_link">https://developer.huawei.com/consumer/cn/hms/huawei-locationkit?ha_source=hms7</string>
+    <string name="location_lbs">基于定位的服务</string>
+
+
+    <string name="push_name">推送服务</string>
+    <string name="push_link">https://developer.huawei.com/consumer/cn/hms/huawei-pushkit?ha_source=hms7</string>
+    <string name="push_message">订阅消息</string>
+
+    <string name="video_name">视频服务</string>
+    <string name="video_link">https://developer.huawei.com/consmer/cn/hms/huawei-videokit?ha_source=hms7</string>
+    <string name="video_play">视频展示</string>
+
+    <string name="iap_name">应用内支付服务</string>
+    <string name="iap_link">https://developer.huawei.com/consumer/cn/hms/huawei-iap?ha_source=hms7</string>
+    <string name="member_purchase">会员购买</string>
+
+    <string name="ml_translation_des">实现40种语言文字在线互译，让全球各地的用户都能浏览各类新闻内容。</string>
+    <string name="ml_resolution_des">提升新闻图片的分辨率，获取更佳的新闻浏览体验，同时也能节约云端资源。</string>
+    <string name="ml_tts_des">在阅读新闻时，语音合成服务可以将大篇幅的文本转为语音输出，同时在播放时能够实时高亮显示播放的内容，释放双眼，让文字开口说话，为阅读添加乐趣。</string>
+    <string name="account_login_des">通过一键快捷登录功能，用户不必输入帐号、密码，不必经过繁琐验证，即可通过华为帐号快速登录并使用新闻App。</string>
+    <string name="iap_sub_des">应用内支付服务支持多语言、多商品、多支付方式等为一体的订阅、会员订购体验。</string>
+    <string name="video_play_des">视频服务支持低卡顿、高清晰度、无缝切换的视频播放，让用户畅享稳定高清的新闻视频。</string>
+    <string name="ads_des">华为广告服务支持多种广告展示形式，如打开应用时展示开屏广告，在新闻列表中穿插原生广告，视频开始前的贴片广告，为新闻类应用开发者获取变现收益。</string>
+    <string name="location_lbs_des">精准获取用户位置，展示附近新闻信息。</string>
+    <string name="push_notify_des">用户通过订阅等动作即可触发推送信息精准触达至用户，优化运营工作，提升用户活跃度。</string>
+    <string name="analytics_report_des">华为分析服务是一款免费的跨平台、多设备数据分析产品，帮您清晰理解用户行为方式，轻松实现数据驱动的精细化运营。</string>
+    <string name="ml_asr_des">语音搜索方案在新闻App中实现高精度的ASR（自动语音识别）功能，帮助用户快捷搜索新闻。</string>
+    <string name="begin_rich_text">请开始你的创作！~</string>
+    <string name="publish_success">发布成功</string>
+
+    <!-- instream ad-->
+    <string name="ad_tips">%ss|跳过</string>
+
+    <!-- videoListFragment -->
+    <string name="video_no_wifi">没有WIFI链接不能进行视频播放，请连接WIFI并重启应用。</string>
+    <string name="video_url_share">分享</string>
+    <string name="video_no_tip">暂无相关视频</string>
+    <string name="video_key">video_url_cn</string>
+    <string name="video_url_null">视频链接为空，请重试</string>
+
+    <!-- MemberActivity -->
+    <string name="member_buy">立即开通</string>
+    <string name="member_price">%s %s</string>
+    <string name="member_title">开通会员</string>
+    <string name="member_no_enable">未开通</string>
+    <string name="member_buy_tip">请先选择要购买的服务</string>
+    <string name="buy_member_success">购买成功</string>
+    <string name="buy_member_tip_2">重复购买</string>
+    <string name="member_des_1">%s 下次自动续费时间:%s</string>
+    <string name="member_des_2">%s %s后到期</string>
+    <string name="membership_package">会员套餐</string>
+    <string name="membership_privileges">会员特权</string>
+    <string name="prestige_sign">尊贵标志</string>
+    <string name="video_free">视频免广告</string>
+
+    <!-- push -->
+    <string name="tile_news_push">新闻推送</string>
+    <string name="body_news_push">您关注的%1$s账号还发布了另一篇文章：%2$s。</string>
+
+    <!-- FollowActivity -->
+    <string name="followed">已关注</string>
+    <string name="add_follow">+ 关注</string>
+    <string name="update_time">1天内有更新</string>
+    <string name="account">帐号</string>
+    <string name="update_within_day">%d天内有更新</string>
+    <string name="update_within_days">%d天内有更新</string>
+    <string name="update_on">更新于%s</string>
+
+    <!-- FavoriteActivity -->
+    <string name="title_favorite">收藏的新闻</string>
+    <string name="undo_favorite_alert">是否取消收藏</string>
+
+    <!-- BrowsingHistoryActivity -->
+    <string name = "title_history">浏览历史</string>
+
+    <!-- Webview -->
+    <string name="url_error">链接错误</string>
+
+    <!-- Privacy activity -->
+    <string name="exitMessage">即将退出新闻Demo</string>
+    <string name="privacyReject">拒绝</string>
+    <string name="privacyaccept">同意</string>
+    <string name="privacycontinue">继续</string>
+    <string name="confirm_button">确定</string>
+    <string name="readme_url">https://github.com/HMS-Core/hms-news-demo/blob/main/README_ZH.md</string>
+    <string name="privacy_state">本Demo应用将帮助您了解如何在新闻应用中集成HMS Core的各项能力，以及如何在应用中集成HMS Core SDK或Kit服务。 应用演示了本地发布，新闻展示及新闻阅读的过程。\n\n HMS Core为新闻类应用提供了创新的解决方案以加速客户获取及提高客户转化率，实现可持续的业务增长.\n\n详情参见</string>
+    <string name="privacy_summary1">本服务将需要获取“位置权限”用于首页展示所在城市或国家信息，“话筒权限”用于提供语音搜索功能，“存储”用于在自发布新闻中插入图片。如果您未使用HUAWEI ID登录，请在此确认你年满18岁或以上。在使用以上服务之前，请您授予以上权限，并且确认了解下面的隐私声明，并接受</string>
+    <string name="privacy_title">权限说明及用户协议</string>
+    <string name="privacy_title2">隐私说明</string>
+
+    <string name="readme_title">这里。</string>
+    <string name="agreement_title">新闻 Demo 用户协议。</string>
+    <string name="statement_title">关于 HMS Core 新闻 Demo 与隐私的声明。</string>
+    <string name="agreement_url">file:///android_asset/documents-zh/agreement.html</string>
+    <string name="statement_url">file:///android_asset/documents-zh/privacy.html</string>
+
+    <!-- FeedbackActivity -->
+    <string name="rating">综合评分</string>
+    <string name="submit">提交反馈</string>
+    <string name="feedback_content">请填写您的宝贵建议</string>
+    <string name="confirm_feedback">感谢您提出的建议，我们将分析并尽快改进。</string>
+    <string name="help_and_feedback">问卷调研</string>
+    <string name="version_update">版本更新</string>
+    <string name="empty_address">本地</string>
+    <string name="survey_url">http://hms-core.mikecrm.com/nhj9dNk</string>
+
+    <string name="stop_reading_tips">正在阅读文章，是否确认退出？</string>
+    <string name="language_not_support">当前语言（%s）暂不支持阅读！</string>
+    <string name="net_connect_falied">网络连接异常</string>
+    <string name="question1">Q1.请问您觉得我们的Demo存在哪些问题？</string>
+    <string name="question2">Q2.请问您有什么优化建议呢？</string>
+    <string name="question3">Q3.您对我们的Demo是否满意？</string>
+
+
+    <!-- EditPicture -->
+    <string name="back">回退</string>
+    <string name="filter">滤镜</string>
+    <string name="crop">剪辑</string>
+    <string name="stickers">贴纸</string>
+    <string name="ad_flag">Ad</string>
+    <string name="click_img_to_edit">点击图片进行编辑</string>
+    <string name="super_image_300">图片超级分辨率，分辨率提升300%</string>
+    <string name="wrigh_a_title_40">写个标题吧 (最多40个字)~</string>
+    <string name="cancle">取消</string>
+    <string name="next">下一步</string>
+    <string name="cover_set">封面设置</string>
+    <string name="no_picture">无图</string>
+    <string name="single_picture">单图</string>
+    <string name="release">发布</string>
+    <string name="top">置顶</string>
+    <string name="delete_image">删除图片</string>
+    <string name="edit_image">编辑图片</string>
+    <string name="mine_news">我的发布</string>
+    <string name="add_picture">添加封面图片</string>
+    <string name="filter_type_1">原图</string>
+    <string name="filter_type_2">黑白</string>
+    <string name="filter_type_3">棕调</string>
+    <string name="filter_type_4">慵懒</string>
+    <string name="filter_type_5">小苍兰</string>
+    <string name="image_back">返回</string>
+    <string name="image_filter">保存滤镜</string>
+    <string name="image_crop">保存剪辑</string>
+    <string name="image_sticker">保存贴纸</string>
+
+    <!-- Super Resolution -->
+    <string name="clickpicture">点击图片体验超分</string>
+
+    <!-- Others -->
+    <string name="privacy_summary2">  </string>
+</resources>

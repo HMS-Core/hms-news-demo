@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".page.activity.news.NewsViewActivity">
+
+        <RelativeLayout
+            android:id="@+id/lTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:src="@mipmap/icon_back" />
+
+            <ImageView
+                android:id="@+id/smartRobot"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/store"
+                android:onClick="onClick"
+                android:padding="6dp"
+                android:src="@mipmap/smart_robot" />
+
+            <ImageView
+                android:id="@+id/store"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_toLeftOf="@+id/share"
+                android:onClick="onClick"
+                android:padding="6dp"
+                android:src="@mipmap/news_store" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_38"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClick"
+                android:padding="6dp"
+                android:src="@mipmap/news_share"
+                />
+
+            <ImageView
+                android:id="@+id/threeDots"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClick"
+                android:padding="6dp"
+                android:src="@drawable/ic_three_dots"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/positionMarkers"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lBottom"
+            android:layout_below="@+id/lTop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/lPublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@mipmap/avatar_hms"/>
+                    <TextView
+                        android:id="@+id/publisher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="publisher"
+                        android:textSize="18sp"
+                        android:layout_toRightOf="@+id/avatar"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:layout_toRightOf="@+id/avatar"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/publisher"/>
+
+                    <TextView
+                        android:id="@+id/follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_shape_red"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="1dp"
+
+                        android:text="+关注"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:onClick="onClick"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:alpha="1"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/lBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

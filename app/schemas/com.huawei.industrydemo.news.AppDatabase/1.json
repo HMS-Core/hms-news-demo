@@ -1,0 +1,96 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "339e1cd7e591c48e288be75f7dfc2aa3",
+    "entities": [
+      {
+        "tableName": "User",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`openId` TEXT NOT NULL, `huaweiAccount` TEXT, `isMember` INTEGER NOT NULL, `isAutoRenewing` INTEGER NOT NULL, `expirationDate` INTEGER NOT NULL, `privacyFlag` INTEGER NOT NULL, `recentSearchList` TEXT, PRIMARY KEY(`openId`))",
+        "fields": [
+          {
+            "fieldPath": "openId",
+            "columnName": "openId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "huaweiAccount",
+            "columnName": "huaweiAccount",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isMember",
+            "columnName": "isMember",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isAutoRenewing",
+            "columnName": "isAutoRenewing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "expirationDate",
+            "columnName": "expirationDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "privacyFlag",
+            "columnName": "privacyFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recentSearchList",
+            "columnName": "recentSearchList",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "openId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "AppConfig",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`keyword` TEXT NOT NULL, `value` TEXT, PRIMARY KEY(`keyword`))",
+        "fields": [
+          {
+            "fieldPath": "keyword",
+            "columnName": "keyword",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "value",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "keyword"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '339e1cd7e591c48e288be75f7dfc2aa3')"
+    ]
+  }
+}

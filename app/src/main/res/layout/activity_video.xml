@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".page.activity.VideoActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/view_video"
+            layout="@layout/view_video">
+        </include>
+        <include
+            android:id="@+id/view_instream_ad"
+            layout="@layout/view_ads">
+        </include>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="title"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:src="@mipmap/video_share"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_video"
+        android:layout_width="match_parent"
+        android:background="@color/video_list_bgd"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

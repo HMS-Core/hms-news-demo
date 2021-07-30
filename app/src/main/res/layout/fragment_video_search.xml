@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_video"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_no_video"
+        android:text="@string/video_no_tip"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TextView>
+</FrameLayout>

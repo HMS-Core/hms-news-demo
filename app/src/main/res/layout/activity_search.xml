@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".page.activity.SearchActivity">
+
+    <com.huawei.industrydemo.news.wight.SearchView
+            android:id="@+id/view_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+    <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_search"
+            android:layout_marginTop="2dp"
+            android:layout_toStartOf="@+id/search_delete"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:text="@string/search_history"
+            android:textColor="@color/black" />
+
+    <ImageView
+            android:id="@+id/search_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_history"
+            android:layout_alignBottom="@+id/tv_history"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:src="@mipmap/search_delete">
+
+    </ImageView>
+
+    <com.huawei.industrydemo.news.wight.SearchContentLayout
+            android:id="@+id/view_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_history"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:padding="8dp" />
+
+    <TextView
+            android:id="@+id/tv_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_history"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:text="@string/search_hot"
+            android:textColor="@color/black" />
+
+    <com.huawei.industrydemo.news.wight.SearchContentLayout
+            android:id="@+id/view_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hot"
+            android:background="@color/white"
+            android:padding="8dp" />
+
+    <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search_voice" />
+</RelativeLayout>

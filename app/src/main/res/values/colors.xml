@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ab1515</color>
+    <color name="color_line_gray">#CBCBCB</color>
+    <color name="light_gold">#EFD995</color>
+    <color name="gold">#DAA520</color>
+    <color name="color_bdg_gray">#F2F2F2</color>
+
+    <!---MainActivity -->
+    <color name="tab_text_color_selected">#186de1</color>
+    <color name="tab_text_color_no_selected">#000000</color>
+
+    <!---SearchBox -->
+    <color name="search_box_bgd">#F2F2F2</color>
+    <color name="color_search_bgd_gray">#C4C8D0</color>
+
+    <!--KitTip-->
+    <color name="tip_view_bdg">#8f000000</color>
+    <color name="tip_view_bdg2">#D0878684</color>
+    <color name="black1b">#1b1b1b</color>
+    <color name="green21" >#0479CA</color>
+    <color name="grey_f2">#f2f2f2</color>
+
+    <!--instream ads-->
+    <color name="ads_skip_tip_bdg">#8f000000</color>
+
+    <!--MemberActivty-->
+    <color name="member_no_select_bdg">#F2F2F2</color>
+    <color name="member_select_bdg_1">#EFD995</color>
+    <color name="member_select_bdg_2">#DAA520</color>
+    <color name="member_item_text_color">#874f20</color>
+    <color name="member_title_start">#fbfadc</color>
+    <color name="member_title_end">#fdfcf8</color>
+
+    <!-- FollowActivity -->
+    <color name="bg_followed">#D0878684</color>
+    <color name="bg_add_follow">#0479CA</color>
+    <color name="text_followed">#D0878684</color>
+    <color name="text_add_follow">#F2F2F2</color>
+
+    <!-- SearchActivity -->
+    <color name="search_hot_title">#ff6978</color>
+    <color name="background_button_default">#F65959</color>
+
+    <!-- VideoActivity -->
+    <color name="video_list_bgd">#F6F6F6</color>
+
+    <!-- Version update -->
+    <color name="version_update">#5a97ff</color>
+
+</resources>

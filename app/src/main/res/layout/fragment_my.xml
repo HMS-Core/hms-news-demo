@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bdg_gray"
+    android:orientation="vertical"
+    tools:context=".page.fragment.MyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:text="@string/my_login"
+            android:layout_width="80dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_login_red"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="80dp">
+        </TextView>
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/head_my"
+            android:layout_centerHorizontal="true"
+            >
+        </ImageView>
+        <ImageView
+            android:id="@+id/iv_level"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginEnd="-6dp"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_alignEnd="@+id/iv_head"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/iv_head"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/corner_bdg_my_lv"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/lv_favorite"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/my_favorite"
+                android:padding="4dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/my_favorite"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_follow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:src="@mipmap/my_follow"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/my_follow"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lv_history"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/my_view_history"
+                android:padding="4dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/my_view_history"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/corner_bdg_my_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_vip_center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:text="@string/my_vip_center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_line_gray"/>
+
+        <TextView
+            android:id="@+id/tv_my_release"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:text="@string/my_release"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_line_gray"/>
+
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:text="@string/my_privacy"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_line_gray"/>
+
+        <LinearLayout
+            android:id="@+id/tv_survey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/help_and_feedback"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/survey_image"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/dp_1"
+                android:layout_gravity="center"
+                android:src="@mipmap/survey" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_line_gray"/>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:padding="10dp"
+            android:text="@string/version_update"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/color_line_gray"/>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:text="@string/my_logout"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

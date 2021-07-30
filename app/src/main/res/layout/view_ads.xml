@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/instream_ad_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/video_size"
+   >
+    <TextView
+        android:id="@+id/tv_instream_skip"
+        android:layout_width="80dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ad_tips"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:background="@drawable/ads_skip_bgd"
+        android:textSize="16sp"
+      />
+</RelativeLayout>

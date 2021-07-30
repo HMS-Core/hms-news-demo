@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lv_item"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center"
+    app:contentPadding="1dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/member_no_select_bdg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rv_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/member_item_no_select_bdg"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_member_name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/member_item_text_color"
+            android:text="xxx"
+            android:paddingTop="24dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_member_price"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_member_name"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="xxx"
+            android:padding="8dp"
+            android:textColor="@color/member_item_text_color"
+            android:textSize="16sp"
+           />
+        <TextView
+            android:id="@+id/tv_member_origin_price"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_member_price"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="xxx"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

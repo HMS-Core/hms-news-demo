@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:src="@mipmap/icon_back"
+                android:onClick="onClick"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="10dp"
+                    android:text="publisher" />
+
+
+                <RelativeLayout
+                    android:id="@+id/add"
+                    android:layout_width="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="100dp"
+                    android:background="@color/back_gray_color"
+                    android:layout_marginRight="10dp"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/ivAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/news_plus"
+                        android:layout_centerHorizontal="true"
+                        android:layout_above="@+id/tvAdd"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_picture"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="10dp"
+                        android:visibility="visible"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cover_set" />
+
+                <RadioGroup
+                    android:id="@+id/grounp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pictureNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_picture"
+                        android:button="@null"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@drawable/news_cover_text_color_selector"
+                        android:background="@drawable/rb_bg_selector"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/pictureOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/single_picture"
+                        android:textColor="@drawable/news_cover_text_color_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rb_bg_selector"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        />
+
+                    />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:text="@string/release"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_btn_red"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:onClick="onClick"/>
+
+    </RelativeLayout>
+
+</layout>

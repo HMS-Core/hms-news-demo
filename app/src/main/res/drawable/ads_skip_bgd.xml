@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:useLevel="false">
+    <solid android:color="@color/ads_skip_tip_bdg"/>
+    <corners android:radius="12dp"/>
+</shape>

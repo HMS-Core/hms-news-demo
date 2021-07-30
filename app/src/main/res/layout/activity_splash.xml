@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x_splash"
+    tools:context="com.huawei.industrydemo.news.page.SplashActivity">
+
+    <!-- 开屏广告Logo区域 -->
+    <RelativeLayout
+        android:id="@+id/logo_area"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/logo_huawei" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/owner"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.5"
+                android:text="@string/copyright_info"
+                android:textColor="@android:color/black"
+                android:textSize="8sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 开屏广告视图 -->
+    <com.huawei.hms.ads.splash.SplashView
+        android:id="@+id/splash_ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/logo_area" />
+</RelativeLayout>
