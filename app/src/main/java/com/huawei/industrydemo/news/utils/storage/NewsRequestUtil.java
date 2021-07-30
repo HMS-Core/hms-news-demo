@@ -21,10 +21,13 @@ package com.huawei.industrydemo.news.utils.storage;
 
 import android.util.Log;
 
+import com.google.gson.JsonSyntaxException;
 import com.huawei.agconnect.cloud.storage.core.DownloadTask;
 import com.huawei.industrydemo.news.entity.News;
 import com.huawei.industrydemo.news.utils.JsonUtil;
 import com.huawei.industrydemo.news.utils.agc.AgcUtil;
+
+import org.json.JSONException;
 
 
 public class NewsRequestUtil extends StorageUtil {
@@ -49,6 +52,9 @@ public class NewsRequestUtil extends StorageUtil {
                 Log.e(TAG, "downloadFile:file path not .json: " + result);
             }
         } catch (ClassNotFoundException e) {
+            AgcUtil.reportException(TAG, e);
+        } catch (JsonSyntaxException e) {
+            Log.e(TAG, "downloadFile:JsonSyntaxException " + downloadFilePath);
             AgcUtil.reportException(TAG, e);
         }
     }

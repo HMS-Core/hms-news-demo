@@ -84,6 +84,8 @@ dependencies {
     // eventbus
     implementation 'org.greenrobot:eventbus:3.2.0'
     
+    implementation 'org.jsoup:jsoup:1.13.1'
+    
     implementation 'com.fasterxml.jackson.core:jackson-core:2.12.1'
 
     // AGC
@@ -96,8 +98,8 @@ dependencies {
 
     // HMS
     implementation 'com.huawei.hms:hwid:5.3.0.305'
-    implementation 'com.huawei.hms:ads-lite:13.4.45.302'
-    implementation 'com.huawei.hms:hianalytics:6.0.0.300'
+    implementation 'com.huawei.hms:ads-lite:13.4.45.304'
+    implementation 'com.huawei.hms:hianalytics:6.0.0.301'
     implementation 'com.huawei.hms:iap:5.3.0.300'
     implementation 'com.huawei.hms:ml-computer-language-detection:2.2.0.300'
     implementation 'com.huawei.hms:ml-computer-translate:2.2.0.300'
@@ -109,7 +111,7 @@ dependencies {
     implementation 'com.huawei.hms:network-embedded:5.0.3.300'
     implementation 'com.huawei.hms:push:5.3.0.304'
     implementation 'com.huawei.hms:videokit-player:1.0.5.300'
-    implementation 'com.huawei.hms:location:5.1.0.300'
+    implementation 'com.huawei.hms:location:5.1.0.303'
     implementation "com.huawei.hms:image-vision:1.0.3.304"
     implementation "com.huawei.hms:image-vision-fallback:1.0.3.304"
 
